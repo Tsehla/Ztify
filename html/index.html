@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{site_title}}</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+             
+    <!-------------------------------------- static script ----------------------------->    
+        <script type="text/javascript" src="index.js"></script>
+
+        <!---- style attribute decide by user ----->
+        <style>
+
+            body {
+                    background-color : {{body_background_colour}};
+                    color : {{body_text_colour}};
+            }
+            button {
+                    border-width : {{all_buttons_border_size}}px;
+                    border-style : solid;
+                    border-color : {{all_buttons_border_color}};
+                    background-color : {{all_buttons_background_color}};
+                    color : {{all_buttons_text_color}};
+                    border-radius : {{all_buttons_border_radius_left}}px {{all_buttons_border_radius_right}}px;
+                    height : {{all_buttons_size}}px;
+            }
+            .category_button {
+                      height: {{category_buttons_size}}px;
+            } 
+            #site_category {
+                             height: {{category_buttons_size}}px;
+            }
+
+
+        </style>
+        
+    </head>
+    
+    <body>
+    <!----------------------------------- site navigation ----------------------------->
+        <div id = 'site_nav'>
+            <div id = 'home_button'>Home</div>
+            <div id = 'contact_button'>Contact</div>
+            <input type = 'search' id = 'search_input' placeholder = 'find'>
+            <div id = 'parcel_track'>Locate</div>
+        
+        </div>
+    
+    <!------------------------------------ site category ------------------------------->
+        <div id = 'site_category'>
+            {% for category in category_array %}
+                <button id = 'category_button_{{loop.index}}' class = 'category_button' style='width: Calc(100vw/{{loop.length}}); display : inline-block; float : left; margin : 0px; padding : 0px;'>{{category}}</button>
+             {% endfor %}
+        </div>
+    
+
+    <!-------------------------------------- Slider ------------------------------------>
+        <div id = 'slider_menu'></div>
+        
+        <script type="text/javascript">
+            
+            var slider_links ="{{links_array}}";
+            var slider_links_array = slider_links.split(',');
+            home_page_slider (slider_links_array); //pass links to function        
+        </script>
+        
+     <!-------------------------------------- products --------------------------------->
+        
+        
+        
+    
+    <!--------------------------------------- footer ----------------------------------->
+    <div id = 'page_footer'></div>
+        
+   
+        
+    
+    </body>
+
+</html>

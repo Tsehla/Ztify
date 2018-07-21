@@ -1,0 +1,48 @@
+body {
+  margin-left: 0px; }
+
+/* {border: 0.1px solid black;} */
+/* --------------navigation--------------*/
+#site_nav {
+  width: 100vw;
+  height: 9dp;
+  text-align: center;
+  line-height: 9dp;
+  vertical-align: middle; }
+
+#site_nav div {
+  height: 9dp;
+  width: 20vw;
+  margin: 0.5dp;
+  display: inline-block;
+  float: left; }
+
+#search_input {
+  width: 40vw;
+  height: 9dp;
+  background-color: white;
+  margin: 0.5dp;
+  display: inline-block;
+  float: left;
+  border: 0px;
+  border-radius: 2px 2px; }
+
+/* ----------category button------------------ */
+/* issue this category somehow got interwined with navigation*/
+#site_category {
+  height: auto;
+  width: 100vw;
+  /*border: $border_solid_red;*/
+  padding-top: 30px;
+  background-color: #27272F; }
+
+/*.category_button {
+    height: $nav_div_height;
+}
+*/
+/* ------------------------slider ----------------*/
+#slider_menu {
+  border: 1px solid red;
+  margin-top: 15px;
+  width: 100vw;
+  height: 150px; }

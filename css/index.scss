@@ -1,0 +1,75 @@
+$colour : floralwhite;
+$nav_div_height : 9dp;
+$_0_5margin : 0.5dp;
+$inline_block : inline-block;
+$nav_width : 20vw;
+$border_solid_red : 1px solid red;
+$category_padding_top : 30px;
+$slider_margin_top : 15px;
+$slider_height : 150px;
+
+body {
+    margin-left : 0px;
+   
+}
+/* {border: 0.1px solid black;} */
+/* --------------navigation--------------*/
+
+
+#site_nav {
+    width: 100vw;
+    height: 9dp;
+    text-align: center;
+    line-height: 9dp;
+    vertical-align: middle;
+    
+}
+
+#site_nav {
+    
+    div { 
+            
+            
+            height: $nav_div_height;
+            width : $nav_width;
+            margin : $_0_5margin;
+            display : $inline_block;
+            float: left;
+    }
+}
+
+#search_input {   
+    width: 40vw;
+    height : $nav_div_height;
+    background-color:white; 
+    margin : $_0_5margin;
+    display : $inline_block;
+    float: left;
+    border : 0px;
+    border-radius : 2px 2px;
+}
+
+
+/* ----------category button------------------ */
+/* issue this category somehow got interwined with navigation*/
+#site_category {
+    height: auto;
+    width : 100vw;
+    /*border: $border_solid_red;*/
+    padding-top: $category_padding_top;
+    background-color: #27272F ;
+}
+
+/*.category_button {
+    height: $nav_div_height;
+}
+*/
+
+/* ------------------------slider ----------------*/
+#slider_menu {
+    border : $border_solid_red;
+    margin-top : $slider_margin_top;
+    width: 100vw;
+    height: $slider_height;
+
+}
